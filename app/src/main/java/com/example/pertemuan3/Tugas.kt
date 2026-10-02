@@ -21,6 +21,7 @@ import com.example.pertemuan3.ui.theme.Pertemuan3Theme
 @Composable
 fun ProfileScreen(modifier: Modifier = Modifier) {
     val logoUmv = painterResource(id = R.drawable.logo_umy)
+    val fotoProfil = painterResource(id = R.drawable.foto_tugu)
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -75,7 +76,22 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
                 .background(Color.LightGray),
             contentAlignment = Alignment.Center
         ) {
-
+            Image(
+                painter = fotoProfil,
+                contentDescription = "Foto Profil",
+                modifier = Modifier
+                    .fillMaxSize()
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
+            )
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ProfileScreenPreview() {
+    Pertemuan3Theme {
+        ProfileScreen()
     }
 }
