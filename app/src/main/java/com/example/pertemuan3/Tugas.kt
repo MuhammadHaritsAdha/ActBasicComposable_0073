@@ -20,6 +20,7 @@ import com.example.pertemuan3.ui.theme.Pertemuan3Theme
 
 @Composable
 fun ProfileScreen(modifier: Modifier = Modifier) {
+    val logoUmv = painterResource(id = R.drawable.logo_umy)
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -39,5 +40,11 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             color = Color.Gray
         )
         Spacer(modifier = Modifier.height(24.dp))
+        Image(
+            painter = logoUmv,
+            contentDescription = "Logo Universitas",
+            modifier = Modifier.size(100.dp),
+            contentScale = ContentScale.Fit
+        )
     }
 }
