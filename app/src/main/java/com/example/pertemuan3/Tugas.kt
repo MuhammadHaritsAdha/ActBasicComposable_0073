@@ -54,5 +54,11 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold,
             color = Color.Red
         )
+        Text(
+            text = "Muhammad Harits Adha",
+            fontSize = 18.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Blue
+        )
     }
 }
