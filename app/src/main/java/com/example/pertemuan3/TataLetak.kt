@@ -1,5 +1,4 @@
 import androidx. compose. foundation. Image
-import androidx.compose.foundation.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation. layout. Arrangement
 import androidx. compose. foundation. layout. Box
@@ -22,6 +21,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.pertemuan3.R
 
 //Yang di kelas
 @Composable
@@ -130,7 +130,7 @@ fun TataletakRowColumn(modifier: Modifier) {
 
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
-    val gambar = painterResource(id = R.drawable.notasibalok)
+    val gambar = painterResource(id = R.drawable.logo_umy)
     Column {
         Box(
             modifier = modifier
