@@ -10,6 +10,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Pertemuan3Theme() {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                }
             }
         }
     }
