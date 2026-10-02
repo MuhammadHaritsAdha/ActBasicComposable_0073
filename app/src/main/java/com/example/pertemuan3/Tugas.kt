@@ -26,5 +26,17 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(
+            text = "Login",
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Blue
+        )
+        Text(
+            text = "Ini adalah halaman login,",
+            fontSize = 14.sp,
+            color = Color.Gray
+        )
     }
 }
