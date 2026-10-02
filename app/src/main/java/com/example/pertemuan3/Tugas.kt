@@ -66,5 +66,16 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold,
             color = Color.Black
         )
+        Spacer(modifier = Modifier.height(32.dp))
+
+        Box(
+            modifier = Modifier
+                .size(220.dp)
+                .clip(CircleShape)
+                .background(Color.LightGray),
+            contentAlignment = Alignment.Center
+        ) {
+
+        }
     }
 }
