@@ -38,5 +38,6 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             fontSize = 14.sp,
             color = Color.Gray
         )
+        Spacer(modifier = Modifier.height(24.dp))
     }
 }
