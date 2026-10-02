@@ -46,5 +46,13 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             modifier = Modifier.size(100.dp),
             contentScale = ContentScale.Fit
         )
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text(
+            text = "Nama",
+            fontSize = 14.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Red
+        )
     }
 }
